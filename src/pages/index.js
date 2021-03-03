@@ -12,7 +12,7 @@ const NewHome = () => {
   return (
     <>
       <SEO title="Home" />
-      <Layout>
+      <Layout alternate={false}>
         <Hero />
         <Products />
         <hr class="w-full" />

@@ -10,7 +10,7 @@ const Layout = props => {
         class="flex flex-col m-auto min-h-screen w-full shadow max:border-l max:border-r max:border-gray-300"
         style={{ background: "#fff", maxWidth: "2000px" }}
       >
-        <Header />
+        <Header alternate={props.alternate} />
         <main class="min-h-screen leading-loose">{props.children}</main>
         <Footer />
       </div>

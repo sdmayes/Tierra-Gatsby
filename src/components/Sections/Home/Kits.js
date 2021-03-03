@@ -22,7 +22,7 @@ const Kits = () => {
             <li>Brightens Skin Tone</li>
             <li>Tightens and Refines Skin</li>
           </ul>
-          <Button to="/products/">
+          <Button btnType="secondary" to="/products/">
             View Kit
           </Button>
         </div>

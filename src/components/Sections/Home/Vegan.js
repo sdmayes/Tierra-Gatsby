@@ -20,7 +20,7 @@ const Vegan = () => {
             Every purchase helps put an end to animal cruelty in the skincare
             industry.
           </p>
-          <Button to="/products/">
+          <Button btnType="secondary" to="/products/">
             Learn More
           </Button>
         </div>

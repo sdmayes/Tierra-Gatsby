@@ -56,7 +56,7 @@ const Hero = props => {
               </span>
             </div>
           </div>
-          <Button primary={true} to="/products/">Shop</Button>
+          <Button btnType="primary" to="/products/">Shop</Button>
         </div>
       </div>
     </Image>

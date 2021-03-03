@@ -33,7 +33,7 @@ const FaqItem = ({ question, answer }) => {
       <div
         onClick={() => setExpanded(!expanded)}
         id="Question Container"
-        class={`flex transition-all duration-500 justify-between px-2 md:px-4 py-3 text-lg text-white uppercase font-medium ${
+        class={`flex transition-all duration-500 justify-between px-2 md:px-4 py-5 text-lg text-white uppercase font-medium ${
           styles(expanded).faqTop
         }`}
       >

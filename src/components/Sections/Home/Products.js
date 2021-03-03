@@ -25,7 +25,7 @@ const Products = () => {
       </div>
       <div class="mt-6">
         <FeaturedProducts />
-        <Button class="mx-auto my-5" to="/products/">
+        <Button btnType="secondary" class="mx-auto my-5" to="/products/">
           Shop All
         </Button>
       </div>

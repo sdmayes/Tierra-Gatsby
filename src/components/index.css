@@ -105,15 +105,21 @@
 
 
 .btn-hover {
-    background: linear-gradient(to right,#ee4266 50%, rgba(0,0,0,0) 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .3s ease-out;
+    transition: all .2s ease-out;
 }
 
 .btn-hover:hover {
-    background-position: left bottom;
+    box-shadow: inset 400px 0 0 0 #ee4266;
     color: #fff;
+}
+
+.btn-hover-white {
+    transition: all .2s ease-out;
+}
+
+.btn-hover-white:hover {
+    box-shadow: inset 400px 0 0 0 #fff;
+    color: #000;
 }
 
 html {

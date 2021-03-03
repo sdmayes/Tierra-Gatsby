@@ -143,7 +143,7 @@ const ContactForm = props => {
         onChange={e => handleChange(e)}
       />
       <span style={statusTextStyle(status)}>{text}</span>
-      <Button class="mx-auto mt-1 mb-1 text-xl" type="submit">
+      <Button btnType="secondary" class="mx-auto mt-1 mb-1 text-xl" type="submit">
         {buttonText(status)}
       </Button>
       <div class="m-auto flex flex-col text-center">

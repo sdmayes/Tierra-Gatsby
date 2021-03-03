@@ -1,0 +1,16 @@
+.circle {
+    font-family: "Montserrat Medium";
+    color: #fff;
+    background: #ee4266;
+    width: 18px;
+    height: 18px;
+    border-radius: 21px;
+    position: absolute;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -13px;
+}

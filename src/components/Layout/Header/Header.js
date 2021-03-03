@@ -4,7 +4,6 @@ import Logo from "../../images/Logo"
 import LogoCart from "../../images/MobileCartWhite"
 import MobileNav from "./MobileNav"
 import NavMenu from "./NavMenu"
-import Discount from "../../Sections/elements/discount"
 
 const Header = props => {
   const [showNav, setShowNav] = useState(false)
@@ -14,12 +13,16 @@ const Header = props => {
   }
 
   const linkStyles =
-    "w-full m-auto text-white hover:text-accent text-center uppercase transition duration-150"
+    "w-full m-auto text-lg text-white hover:text-accent text-center uppercase transition duration-150"
+  const defaultStyle =
+    "w-full lg:grid grid-flow-col auto-cols-max hidden justify-between items-center py-4 px-16 bg-gray-900 border-b-4 border-accent shadow"
+  const transparent =
+    "w-full lg:grid grid-flow-col auto-cols-max hidden justify-between items-center py-4 px-16 bg-transparent border-b border-gray-700 bg-black"
 
   return (
     <header class="flex flex-col w-full lg:static sticky top-0 z-50">
       <div class="w-full">
-        <div class="w-full lg:grid grid-flow-col auto-cols-max hidden justify-between items-center py-4 px-8 bg-gray-900">
+        <div class={props.alternate === true ? transparent : defaultStyle}>
           <Logo class="w-32 mr-auto" />
 
           <nav class="grid grid-cols-4 gap-x-10 items-center">
@@ -54,7 +57,7 @@ const Header = props => {
           </nav>
 
           <div class="ml-auto w-32">
-            <LogoCart width="26" />
+            <LogoCart class="ml-auto" width="26" />
           </div>
         </div>
         <MobileNav
@@ -72,7 +75,6 @@ const Header = props => {
         />
       </div>
       <NavMenu toggleNav={toggleNav} visible={showNav} />
-      <Discount />
     </header>
   )
 }

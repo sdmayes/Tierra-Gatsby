@@ -19,7 +19,7 @@ const Ingredients = () => {
             and rely on the best natural ingredients to deliver the results you
             deserve.
           </p>
-          <Button to="/products/">
+          <Button btnType="secondary" to="/products/">
             Shop Skincare
           </Button>
         </div>

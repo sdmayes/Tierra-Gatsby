@@ -15,7 +15,7 @@ const About = () => {
             cut out harmful chemicals allowing you to get amazing skin without
             compromise.
           </p>
-          <Button to="/about/">
+          <Button btnType="secondary" to="/about/">
             Read More
           </Button>
         </div>

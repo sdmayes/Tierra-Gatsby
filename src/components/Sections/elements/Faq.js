@@ -10,7 +10,7 @@ const Faq = () => {
       />
       <FaqItem
         answer="How long will it take for my package to arrive?"
-        question="Hello"
+        question="How long will it take for my package to arrive?"
       />
     </div>
   )

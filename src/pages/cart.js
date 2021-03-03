@@ -20,7 +20,7 @@ const CartPage = props => {
   const getBody = () => {
     if (store.checkout && store.checkout.lineItems.length > 0) {
       return (
-        <section class="section-xl">
+        <section class="section-xl py-12">
           <h1 class="text-3xl md:text-4xl mb-6 my-4">Your Cart</h1>
           <div class="sm:grid grid-cols-3 mb-2 hidden">
             <span class="text-lg uppercase">Product</span>
