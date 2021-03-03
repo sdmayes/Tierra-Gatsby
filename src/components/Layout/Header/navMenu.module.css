@@ -1,0 +1,23 @@
+.navMenu {
+    right: -100vw;
+    transition: all 0.3s ease-out;
+    z-index: 1000;
+    max-width: 320px;
+}
+
+.navMenu.open {
+    right: 0;
+}
+
+.maxw {
+    max-width: 280px;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.closed {
+    pointer-events: none;
+    visibility: hidden;
+}

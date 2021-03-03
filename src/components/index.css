@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Utility Classes */
+@layer utilities {
+    .text-shadow {
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.55);
+    }
+    .text-shadow-md {
+        text-shadow: 4px 4px 8px black;
+    }
+    .text-shadow-lg {
+        text-shadow: 15px 15px 30px black;
+    }
+    .text-shadow-none {
+        text-shadow: none;
+    }
+    .h-screen-3\/4 {
+        height: 85vh;
+        max-height: 1400px;
+    }
+    .w-screen-70 {
+        width: 70vw;
+    }
+    .h-screen-calc {
+        height: calc(100vh - 120px);
+        max-height: 1200px;
+    }
+    .background-darken {
+        background: rgba(0, 0, 0, 0.55);
+    }
+    .text-inflation-none {
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+    /* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.btn-black {
+    @apply py-2 px-6 bg-gray-900 transition-all duration-300 font-sans uppercase text-base text-white border rounded-r-sm border-solid border-gray-900 hover:border-white;
+}
+
+.grid-2-column {
+    @apply lg:max-w-screen-2xl md:max-w-screen-md m-auto grid grid-cols-1 py-4 auto-rows-max gap-y-4 xl:gap-x-32 lg:gap-x-12 lg:grid-rows-1 lg:grid-cols-2;
+}
+
+.grid-3-column {
+    @apply lg:max-w-screen-2xl md:max-w-screen-md m-auto md:gap-x-6 grid sm:grid-cols-1 md:grid-cols-3;
+}
+
+.section-xl {
+    @apply lg:max-w-screen-2xl md:max-w-screen-md mx-auto px-4 place-items-center lg:py-4 lg:px-12;
+}
+
+.section-full {
+    @apply px-2 mt-6 place-items-center lg:py-10 lg:px-12;
+}
+
+
+.btn-hover {
+    background: linear-gradient(to right,#ee4266 50%, rgba(0,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+.btn-hover:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+
+html {
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-family: "Montserrat", georgia, serif;
+  }
+
+p, span {
+    @apply font-sans font-light;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply font-sans font-medium;
+}
+
+.hr-thick {
+    @apply w-1/12 h-1 text-accent bg-accent my-4;
+}
